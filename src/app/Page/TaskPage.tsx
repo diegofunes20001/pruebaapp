@@ -4,14 +4,10 @@ interface TaskProviderProps {
   children: ReactNode;
 }
 
-// Create the TaskContext
 export const TaskContext = createContext({});
 
 export const TaskProvider: React.FC<TaskProviderProps> = ({ children }) => {
-  // You can add context logic here
-
   return (
-    // Provide the context value here
     <TaskContext.Provider value={{}}>
       {children}
     </TaskContext.Provider>
